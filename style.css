@@ -50,15 +50,7 @@ body {
     margin: 0 64px 0 0;
 }
 
-.link > li {
-    color: var(--black-color);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    padding-right: 41px;
-}
-
-.link_page {
+.link_page, .link > li {
     color: var(--black-color);
     font-weight: 600;
     font-size: 16px;
@@ -120,7 +112,7 @@ body {
     margin-bottom: 28px;
 }
 
-.click {
+.click, .click2, .click3 {
     width: 142px;
     height: 42px;
     background-color: var(--button_green-color);
@@ -130,9 +122,10 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 44px;
+    margin-top: 35px;
 }
 
-.click:hover {
+.click:hover, .click2:hover, .click3:hover, .click4:hover {
     background-color: var(--brown-color);
 }
 
@@ -140,17 +133,14 @@ body {
     position: relative;
 }
 
-.modern > div:nth-child(2) > img {
+.image_design, .image_border {
     width: 716px;
     height: 626px;
     border-radius: 20% 0 20% 0;
 }
 
-.modern > div:nth-child(2) > div {
-    width: 716px;
-    height: 626px;
+.image_border {
     border: 2px solid var(--brown-color);
-    border-radius: 20% 0 20% 0;
     position: absolute;
     top: 33px;
     left: 35px;
@@ -244,26 +234,18 @@ h3 {
     margin: 200px 0;
 }
 
-.my_test {
+.image_border_2 {
     border: 2px solid var(--brown-color);
-    border-radius: 20% 0 20% 0;
-    width: 681px;
-    height: 726px;
     position: absolute;
     z-index: -1;
     top: -32px;
     left: -36px;
 }
 
-.about_us > img {
+.image_design_2, .image_border_2 {
     border-radius: 20% 0 20% 0;
     width: 681px;
     height: 726px;
-}
-
-.about_us > div:nth-child(2) {
-    /* чомусь тут це не спрацювало, те що низче  */
-
 }
 
 .about_us_title {
@@ -289,47 +271,248 @@ h3 {
     margin-top: 0;
 }
 
-.about_us_title > button {
-    width: 142px;
-    height: 42px;
-    background-color: var(--button_green-color);
-    color: var(--white-color);
-    border-radius: 20px 0;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 44px;
-    margin-top: 35px;
-}
-
-.about_us_title > button:hover {
-    background-color: var(--brown-color);
-}
-
 .with_us {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
+.image_design_3, .image_border_3 {
+    border-radius: 20% 0;
+    width: 681px;
+    height: 726px;
+}
 
-/* p.we_work_twenty_years {
-    font-size: 100px;
-    font-weight: 700px;
-} */
+.image_border_3 {
+    border-radius: 20% 0;
+    border: 2px solid var(--brown-color);
+    position: absolute;
+    top: 28px;
+    left: 696px;
+    z-index: -1;
+}
+
+.twenty {
+    color: var(--black-color);
+    width: 528px;
+    height: 446px;
+}
+
+.we_work_twenty_years {
+    color: var(--black-color);
+    font-size: 150px;
+    font-weight: 700;
+    margin:100px 0;
+}
+
+.we_work_years {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 65px;
+    margin: 0;
+}
 
 .we_done {
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.we_done_this {
-    display: flex;
-    justify-content: space-between;
+h4 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    line-height: 60px;
+    color: var(--black-color);
+    margin: 0;
 }
 
-.we_done_this > div {
-    border: 1px solid greenyellow;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2p 2px rgb(188, 8, 8);
+.we_done_this {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1343px;
+    height: 278px;
+    margin: 87px 0 105px;
+}
+
+.we_box {
+    border-radius: 40px 0;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    width: 185px;
+    height: 182px;
+}
+
+.we_box:nth-child(2n) {
+    align-self: flex-end;
+}
+
+.we_notbox {
+    height: 100px;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.we_notbox:nth-child(6n+2) {
+    border-top: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
+}
+
+.we_notbox:nth-child(5) {
+    border-bottom: 2px solid #E0E0E0;
+    border-right: 2px solid #E0E0E0;
+}
+
+.we_notbox:nth-child(6) {
+    border-top: 2px solid #E0E0E0;
+}
+
+.we_notbox:nth-child(6n+3) {
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.we_box_text {
+   font-weight: 700;
+   text-align: center;
+   padding: 48px 30px;
+}
+
+.we_box_text span {
+    font-size: 50px;
+    color: var(--black-color);
+    line-height: 10px;
+}
+
+.client_box, .client_box1, .blog_box, .client_box2, .blog_box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.client_box2, .blog_box1 {
+    align-items: center;
+}
+
+.text_little, .text_big {
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.text_little {
+    font-size: 20px;
+}
+
+.text_big {
+    font-size: 48px;
+    color: var(--black-color);
+}
+
+.client_write, .blog_box2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+
+.people {
+    width: 632px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.photo_people, .mini_brackets {
+    position: absolute;
+}
+
+.photo_people {
+    top: 40px;
+    right: 500px;
+}
+
+.mini_brackets {
+    top: 20px;
+    right: 20px;
+}
+
+.saville, .waradwaz {
+    width: 571px;
+    height: 226px;
+    box-shadow: 8px 8px 12px -6px;
+    border-radius: 70px 0;
+}
+
+.info-profile_name, .info-profile {
+    max-width: 435;
+    height: auto;
+    margin-left: 95px;
+}
+
+.info-profile_name {
+    margin-top: 37px;
+    margin-bottom: 10px;
+}
+
+.name_profile {
+    font-weight: 700;
+    color: var(--black-color);
+    margin-top: 20px;
+}
+
+.blog_interior {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog_image, .blog_image_border {
+    width: 555px;
+    height: 388px;
+    border-radius: 70px 0;
+}
+
+.blog_image_border {
+    border: 2px solid var(--brown-color);
+    position: absolute;
+    z-index: -1;
+    top: 17px;
+    left: 17px;
+}
+
+.blog_text {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.blog_interior p {
+    margin: 0;
+}
+
+.click4 {
+    width: 271px;
+    height: 53px;
+    background-color: var(--button_green-color);
+    border: none;
+    border-radius: 25px 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white-color);
+    margin-top: 55px;
+}
+
+.singup_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 460px;
 }
