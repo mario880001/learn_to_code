@@ -78,10 +78,6 @@ body {
 
 /* main */
 
-.forme > div {
-    border: 1px dotted red;
-}
-
 .modern {
     display: flex;
     justify-content: space-between;
@@ -319,6 +315,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F8F8F8;
+    ;
 }
 
 h4 {
@@ -346,6 +344,8 @@ h4 {
     box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
     width: 185px;
     height: 182px;
+    background: #FFFFFF;
+
 }
 
 .we_box:nth-child(2n) {
@@ -509,10 +509,77 @@ h4 {
 
 .singup_box {
     display: flex;
+    justify-content: center;
+    margin-top: 117px;
+    margin-bottom: 192px;
+}
+
+.singup_box_2 {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: 772px;
+    height: 245px;
 }
 
 .line {
     width: 460px;
+    margin: 37px 0 40px;
+}
+
+h5 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 48px;
+    color: var(--black-color);
+}
+
+.singup_text, h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.singup_text {
+    width: 647px;
+}
+
+.box_reg_singup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+    width: 772px;
+    border-radius: 20px 0;
+    background-color: #EEEEEE;
+}
+
+.your_mail {
+    width: 590px;
+    height: 48.5px;
+    border-top-left-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #EEEEEE;
+
+}
+
+.your_mail:hover {
+    outline: none;
+    color: var(--black-color);
+}
+
+.click_5 {
+    width: 180px;
+    height: 50px;
+    background-color: var(--button_green-color);
+    color: var(--white-color);
+    border-bottom-right-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.click_5:hover {
+    background-color: var(--brown-color);
 }
