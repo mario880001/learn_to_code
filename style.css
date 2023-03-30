@@ -4,6 +4,7 @@
     --white-color: #FFFFFF;
     --brown-color: #B0855B;
     --button_green-color: #37806B;
+    --icons_gray-color: #D5D5D5;
 }
 
 * {
@@ -563,10 +564,11 @@ h5 {
     font-weight: 500;
     font-size: 18px;
     background-color: #EEEEEE;
+    padding-left: 27px;
 
 }
 
-.your_mail:hover {
+.your_mail:focus {
     outline: none;
     color: var(--black-color);
 }
@@ -601,6 +603,8 @@ h5 {
     height: auto;
     display: flex;
     justify-content: space-between;
+    padding-left: 78px;
+    padding-right: 78px;
 }
 
 .our_info1 {
@@ -646,8 +650,21 @@ h5 {
 .our_info5 .infolist {
     display: flex;
 }
-.our_info5 li:not(:last-child) {
+
+.list_icon:not(:last-child) {
     margin-right: 8px;
+}
+
+.icon_svg {
+    width: 37.17px;
+    height: 37.17px;
+    border-radius: 50%;
+    background-color: var(--icons_gray-color);
+    fill: var(--white-color);
+}
+
+.icon_svg:hover {
+    background-color: var(--button_green-color);
 }
 
 .copyright {
