@@ -655,15 +655,13 @@ h5 {
     margin-right: 8px;
 }
 
-.icon_svg {
-    width: 37.17px;
-    height: 37.17px;
+.iconimg {
+    width: 37px;
     border-radius: 50%;
     background-color: var(--icons_gray-color);
-    fill: var(--white-color);
 }
 
-.icon_svg:hover {
+.iconimg:hover {
     background-color: var(--button_green-color);
 }
 
@@ -676,3 +674,31 @@ h5 {
 .copyright span {
     color: var(--button_green-color);
 }
+
+/* .test */
+
+/* .icon_sv {
+    border: 1px solid red;
+    height: 37px;
+    fill: red;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.icon_sv:hover {
+    border: none;
+    fill: rgb(1, 167, 31);
+    background-color: rgb(255, 255, 255);
+} */
+
+/* .icon_svg {
+    width: 37.17px;
+    height: 37.17px;
+    border-radius: 50%;
+    background-color: var(--icons_gray-color);
+    fill: var(--white-color);
+}
+
+.icon_svg:hover {
+    background-color: var(--button_green-color);
+} */
